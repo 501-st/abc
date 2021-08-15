@@ -34,6 +34,7 @@ const Subtitle = styled.div`
   color: #2C143D;
   margin-bottom: 46px;
   margin-left: 10px;
+  width: 1180px;
 `;
 
 const Card = styled.div`
@@ -66,7 +67,7 @@ const CardText = styled.div`
 const AdminAndTeacherCards = ({user}) => {
     return (
         <Container>
-            <div style={{margin: "0 280px", padding: "57px 0 75px 0"}}>
+            <div style={{marginLeft: "320px", padding: "57px 0 75px 0"}}>
                 <Subtitle>
                     {user === "teacher" ? "Разгрузите себя от рутинных операций"
                         : "Подключите ваш университет к современной платформе с автопроверкой заданий и большой методической базой"}

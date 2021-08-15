@@ -8,7 +8,7 @@ const Header = styled.div`
   flex-direction: row;
   justify-content: space-between;
   font-family: Rubik;
-  margin: 20px 370px 60px 370px;
+  margin: 20px 320px 60px 320px;
 `;
 
 const LogoAndNav = styled.div`

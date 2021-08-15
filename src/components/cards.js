@@ -23,7 +23,7 @@ const data = [{
 const RowContainer = styled.div`
   display: flex;
   flex-direction: ${props => props.isReversed === "reversed" ? "row-reverse" : "row"};
-  justify-content: center;
+  justify-content: space-between;
 `;
 
 const TextInCards = styled.div`

@@ -38,7 +38,7 @@ const Btn = styled.button`
 `;
 
 const Container = styled.div`
-  margin: 0 370px;
+  margin: 0 320px;
   padding-bottom: 126px;
 `;
 
