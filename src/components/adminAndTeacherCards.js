@@ -33,6 +33,7 @@ const Subtitle = styled.div`
   font-size: 36px;
   color: #2C143D;
   margin-bottom: 46px;
+  margin-left: 10px;
 `;
 
 const Card = styled.div`
