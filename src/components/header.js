@@ -2,6 +2,7 @@ import * as React from "react"
 import styled from "styled-components";
 import Logo from "../images/LogoEP.svg"
 import "../index.css"
+import Ellipse1 from "../images/ellipseHeader.svg"
 
 const Header = styled.div`
   display: flex;
@@ -35,6 +36,7 @@ const Btn = styled.button`
   color: #FFFFFF;
   height: 45px;
   padding: 0 50px;
+  z-index: 1000;
 `;
 
 const Link = styled.a`
@@ -42,24 +44,37 @@ const Link = styled.a`
   text-decoration: none;
 `;
 
+const Ellipse = styled.img`
+  position: absolute;
+  right: 0;
+  top: 0;
+`;
+
+const ReturnImages = () => {
+    return (
+        <Ellipse src={Ellipse1} alt="ellipse"/>
+    )
+}
+
 
 const HeaderComponent = ({user}) => {
     return (
         <>
+            <ReturnImages/>
             <Header>
                 <LogoAndNav>
                     <img src={Logo} alt="Logo"/>
                     {user !== undefined ? <Nav>
-                        <Link href="#" style={{marginRight: "25px"}}>
-                            Администрации вуза
-                        </Link>
-                        <Link href="#" style={{marginRight: "25px"}}>
-                            Учителям
-                        </Link>
-                        <Link href="#">
-                            Студентам
-                        </Link>
-                    </Nav>
+                            <Link href="#" style={{marginRight: "25px"}}>
+                                Администрации вуза
+                            </Link>
+                            <Link href="#" style={{marginRight: "25px"}}>
+                                Учителям
+                            </Link>
+                            <Link href="#">
+                                Студентам
+                            </Link>
+                        </Nav>
                         : ""}
                 </LogoAndNav>
                 <Btn>

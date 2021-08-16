@@ -3,8 +3,10 @@ import "../index.css"
 import styled from "styled-components";
 import PictureAdmin from "../images/ForAdministration.svg"
 import PictureTeacher from "../images/ForTeachers.svg"
+import DashImg from "../images/dash1.svg";
 
-const SubTitle   = styled.div`
+
+const SubTitle = styled.div`
   font-family: Rubik;
   font-weight: 500;
   font-size: 24px;
@@ -42,22 +44,43 @@ const Container = styled.div`
   padding-bottom: 126px;
 `;
 
+
+const Dash = styled.img`
+  position: absolute;
+  left: 0;
+  top: 6%;
+`;
+
+const ReturnImages = () => {
+    return (
+        <>
+            <div style={{overflow: "hidden"}}>
+                <Dash src={DashImg} alt="dash1"/>
+            </div>
+        </>
+    )
+}
+
 const TitleComponent = ({user}) => {
     return (
-        <Container>
-            <SubTitle>
-                {user === "teacher" ? "Для преподавателей" : "Для администрации вуза"}
-            </SubTitle>
-            <RowContainer style={{marginBottom: "30px"}}>
-                <Title>
-                    {user === "teacher" ? "Освободите время для решения творческих задач" : " Сделайте цифровую трансформацию учебного процесса"}
-                </Title>
-                <img style={{marginTop: "100px"}} src={user === "teacher" ? PictureTeacher : PictureAdmin} alt="pic"/>
-            </RowContainer>
-            <Btn>
-                Попробовать демо версию
-            </Btn>
-        </Container>
+        <>
+            <ReturnImages/>
+            <Container>
+                <SubTitle>
+                    {user === "teacher" ? "Для преподавателей" : "Для администрации вуза"}
+                </SubTitle>
+                <RowContainer style={{marginBottom: "60px"}}>
+                    <Title>
+                        {user === "teacher" ? "Освободите время для решения творческих задач" : " Сделайте цифровую трансформацию учебного процесса"}
+                    </Title>
+                    <img style={{marginTop: "100px"}} src={user === "teacher" ? PictureTeacher : PictureAdmin}
+                         alt="pic"/>
+                </RowContainer>
+                <Btn>
+                    Попробовать демо версию
+                </Btn>
+            </Container>
+        </>
     )
 }
 

@@ -1,6 +1,7 @@
 import * as React from "react"
 import styled from "styled-components";
 import "../index.css"
+import EllipseImg from "../images/ellipseForm.svg"
 
 const RowContainer = styled.div`
   display: flex;
@@ -22,6 +23,7 @@ const DemoAndFormText = styled.div`
   font-weight: normal;
   font-size: 24px;
   color: #5D496A;
+  z-index: 1000;
 `;
 
 const Input = styled.input`
@@ -50,9 +52,22 @@ const Btn = styled.button`
 `;
 
 
+const Ellipse = styled.img`
+  position: absolute;
+  left: 0;
+  bottom: -495%;
+`;
+
+const ReturnImages = () => {
+    return (
+        <Ellipse src={EllipseImg} alt="ellipse"/>
+    )
+}
+
 const FormComponent = ({user}) => {
     return (
         <>
+            <ReturnImages/>
             <div style={{background: "#F2EDF4", width: "100%", marginBottom: "164px"}}>
                 <RowContainer
                     style={{

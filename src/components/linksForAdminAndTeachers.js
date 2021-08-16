@@ -3,6 +3,10 @@ import styled from "styled-components";
 import "../index.css"
 import ForAdministration from "../images/ForAdministration.svg"
 import ForTeachers from "../images/ForTeachers.svg"
+import DashImg from "../images/dash1.svg"
+import DashImg2 from "../images/dash2.svg"
+import EllipseImg from "../images/ellipse2.svg"
+import EllipseImg2 from "../images/ellipse3.svg"
 
 
 const Btn = styled.button`
@@ -24,6 +28,7 @@ const Title = styled.div`
   text-align: center;
   color: #2C143D;
   margin: 0 320px 90px 320px;
+  z-index: 1000;
 `;
 
 const RowContainer = styled.div`
@@ -39,6 +44,7 @@ const CardLinks = styled.div`
   width: 546px;
   height: 407px;
   padding-left: 34px;
+  z-index: 1000;
 `;
 
 const CardLinksText = styled.div`
@@ -50,10 +56,47 @@ const CardLinksText = styled.div`
   margin: 16px 0 20px 0;
 `;
 
+const Dash = styled.img`
+  position: absolute;
+  left: 0;
+  top: 1%;
+`;
+
+const Dash2 = styled.img`
+  position: absolute;
+  right: 0;
+  top: 39%;
+  z-index: -1;
+`;
+
+const Ellipse = styled.img`
+  position: absolute;
+  left: 0;
+  top: 80%;
+`;
+
+const Ellipse2 = styled.img`
+  position: absolute;
+  left: 0;
+  top: 60%;
+`;
+
+const ReturnImages = () => {
+    return (
+        <>
+            <Dash src={DashImg} alt="dash1"/>
+            <Dash2 src={DashImg2} alt="dash2"/>
+            <Ellipse src={EllipseImg} alt="ellipse"/>
+            <Ellipse2 src={EllipseImg2} alt="ellipse"/>
+        </>
+    )
+}
+
 
 const LinksForAdminAndTeachers = () => {
     return (
         <>
+            <ReturnImages/>
             <Title>
                 Сделайте языковую подготовку
                 английского в вузе современной

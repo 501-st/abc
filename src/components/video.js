@@ -1,6 +1,8 @@
 import * as React from "react"
 import styled from "styled-components";
 import "../index.css"
+import DashImg from "../images/dashVideo.svg"
+import EllipseImg from "../images/ellipseVideo.svg"
 
 const Subtitle = styled.div`
   font-family: Rubik;
@@ -17,9 +19,32 @@ const Container = styled.div`
   background: ${props => props.isTeacher === true ? "white" : "#F2EDF4"};
 `;
 
+const Ellipse = styled.img`
+  position: absolute;
+  left: 7%;
+  bottom: -317%;
+`;
+
+const Dash = styled.img`
+  position: absolute;
+  left: 0;
+  bottom: -430%;
+`;
+
+const ReturnImages = () => {
+    return (
+        <>
+            <Ellipse src={EllipseImg} alt="ellipse"/>
+            <Dash src={DashImg} alt="ellipse"/>
+        </>
+    )
+}
+
+
 const Video = ({user}) => {
     return (
         <>
+            {user !== "teacher" ? <ReturnImages/> : ""}
             <Container isTeacher={user === "teacher"}>
                 <div style={{
                     margin: "0 320px", textAlign: "center", display: "flex",
@@ -31,7 +56,8 @@ const Video = ({user}) => {
                         English Patient - творческое пространство для каждого преподавателя и индивидуальная траектория
                         познания для каждого студента.
                     </Subtitle>
-                    <iframe width="1180" height="570" src="https://www.youtube.com/embed/xZIh2so3-AU"
+                    <iframe style={{zIndex: "1000"}} width="1180" height="570"
+                            src="https://www.youtube.com/embed/xZIh2so3-AU"
                             title="YouTube video player"
                             frameBorder="0"/>
                 </div>

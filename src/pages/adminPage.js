@@ -17,7 +17,7 @@ const AdminPage = () => {
             <HeaderComponent user="admin"/>
             <TitleComponent user="admin"/>
             <AdminAndTeacherCards user="admin"/>
-            <Cards/>
+            <Cards user="admin"/>
             <Video/>
             <DemoComponent/>
             <FormComponent user="admin"/>

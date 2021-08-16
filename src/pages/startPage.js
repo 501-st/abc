@@ -10,7 +10,6 @@ import FormComponent from "../components/form";
 import Footer from "../components/footer";
 
 
-
 const StartPage = () => {
     return (
         <>

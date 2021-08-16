@@ -17,8 +17,7 @@ const TeacherPage = () => {
             <HeaderComponent user="teacher"/>
             <TitleComponent user="teacher"/>
             <AdminAndTeacherCards user="teacher"/>
-            <Cards/>
-            <Advantages/>
+            <Cards user="teacher"/>
             <Video user="teacher"/>
             <DemoComponent user="teacher"/>
             <Footer/>
