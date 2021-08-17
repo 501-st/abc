@@ -6,6 +6,7 @@ import Neural from "../images/neural.svg"
 import Cogwheel from "../images/cogwheel.svg"
 import Education from "../images/education.svg"
 import EllipseImg from "../images/ellipseAdvantages.svg"
+import DashImg from "../images/dashAdvantages.svg"
 
 const dataForCards = [{
     title: "Автономность",
@@ -55,6 +56,7 @@ const Card = styled.div`
   width: 320px;
   height: 380px;
   min-width: 220px;
+  z-index: 100;
 `;
 
 const Text = styled.div`
@@ -66,16 +68,21 @@ const Text = styled.div`
 
 const Ellipse = styled.img`
   position: absolute;
-  right: 6%;
-  top: 364%;
+  right: 110px;
+  top: 3350px;
+`;
+
+const Dash = styled.img`
+  position: absolute;
+  left: 0;
+  top: 2750px;
 `;
 
 const ReturnImages = () => {
     return (
         <>
-            <div style={{overflow: "hidden"}}>
-                <Ellipse src={EllipseImg} alt="dash1"/>
-            </div>
+            <Dash src={DashImg}/>
+            <Ellipse src={EllipseImg}/>
         </>
     )
 }

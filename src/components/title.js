@@ -48,7 +48,7 @@ const Container = styled.div`
 const Dash = styled.img`
   position: absolute;
   left: 0;
-  top: 6%;
+  top: 60px;
 `;
 
 const ReturnImages = () => {

@@ -72,14 +72,14 @@ const CardText = styled.div`
 const Dash = styled.img`
   position: absolute;
   right: 0;
-  top: 87%;
+  top: 860px;
   z-index: 0;
 `;
 
 const Dash2 = styled.img`
   position: absolute;
   left: 0;
-  top: 107%;
+  top: 1040px;
 `;
 
 const ReturnImages = () => {

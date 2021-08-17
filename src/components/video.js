@@ -21,14 +21,14 @@ const Container = styled.div`
 
 const Ellipse = styled.img`
   position: absolute;
-  left: 7%;
-  bottom: -317%;
+  left: 110px;
+  bottom: -3030px;
 `;
 
 const Dash = styled.img`
   position: absolute;
   left: 0;
-  bottom: -430%;
+  bottom: -4040px;
 `;
 
 const ReturnImages = () => {

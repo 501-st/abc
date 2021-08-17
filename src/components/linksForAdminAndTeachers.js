@@ -59,26 +59,26 @@ const CardLinksText = styled.div`
 const Dash = styled.img`
   position: absolute;
   left: 0;
-  top: 1%;
+  top: 15px;
 `;
 
 const Dash2 = styled.img`
   position: absolute;
   right: 0;
-  top: 39%;
+  top: 360px;
   z-index: -1;
 `;
 
 const Ellipse = styled.img`
   position: absolute;
   left: 0;
-  top: 80%;
+  top: 750px;
 `;
 
 const Ellipse2 = styled.img`
   position: absolute;
   left: 0;
-  top: 60%;
+  top: 600px;
 `;
 
 const ReturnImages = () => {

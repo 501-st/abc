@@ -55,7 +55,7 @@ const Btn = styled.button`
 const Ellipse = styled.img`
   position: absolute;
   left: 0;
-  bottom: -495%;
+  bottom: -4550px;
 `;
 
 const ReturnImages = () => {

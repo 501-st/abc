@@ -59,34 +59,34 @@ const ContainerForTextInCards = styled.div`
 
 const Ellipse = styled.img`
   position: absolute;
-  left: -3%;
-  top: 167%;
+  left: -50px;
+  top: 1600px;
   z-index: -1;
 `;
 
 const Ellipse2 = styled.img`
   position: absolute;
-  left: -5%;
-  top: 207%;
+  left: -90px;
+  top: 1940px;
 `;
 
 const Ellipse3 = styled.img`
   position: absolute;
-  right: 5%;
-  top: 177%;
+  right: 90px;
+  top: 1700px;
 `;
 
 const Ellipse4 = styled.img`
   position: absolute;
   right: 0;
-  top: 300%;
+  top: 2800px;
   z-index: ${props => props.user === "admin" ? "-1" : "1"};
 `;
 
 const Ellipse5 = styled.img`
   position: absolute;
-  right: 10%;
-  top: 342%;
+  right: 150px;
+  top: 3100px;
   z-index: ${props => props.user === "admin" ? "-1" : "1"};
 `;
 
@@ -94,41 +94,41 @@ const Ellipse5 = styled.img`
 const Dash = styled.img`
   position: absolute;
   right: 0;
-  top: 289%;
+  top: 2720px;
   z-index: -1;
 `;
 
 
 const EllipseStart = styled.img`
   position: absolute;
-  left: 24%;
-  top: 147%;
+  left: 420px;
+  top: 1400px;
   z-index: -1;
 `;
 
 const EllipseStart2 = styled.img`
   position: absolute;
-  right: -3.5%;
-  top: 127%;
+  right: -70px;
+  top: 1200px;
 `;
 
 const EllipseStart3 = styled.img`
   position: absolute;
-  left: 10%;
-  top: 277%;
+  left: 210px;
+  top: 2650px;
 `;
 
 const EllipseStart4 = styled.img`
   position: absolute;
   right: 0;
-  top: 230%;
+  top: 2250px;
   z-index: 1;
 `;
 
 const EllipseStart5 = styled.img`
   position: absolute;
-  right: 8%;
-  top: 272%;
+  right: 150px;
+  top: 2550px;
   z-index: 1;
 `;
 
@@ -136,7 +136,7 @@ const EllipseStart5 = styled.img`
 const DashStart = styled.img`
   position: absolute;
   right: 0;
-  top: 233%;
+  top: 2150px;
   z-index: -1;
 `;
 
@@ -175,7 +175,7 @@ const Cards = ({user}) => {
                 ? <ReturnImages user={user}/>
             : <ReturnImages2/>}
             {data.map((item, index) => (
-                <RowContainer style={{margin: "0 320px 203px 320px"}} isReversed={index % 2 === 0 ? "" : "reversed"}>
+                <RowContainer style={{margin: "0 320px 180px 320px"}} isReversed={index % 2 === 0 ? "" : "reversed"}>
                     <ContainerForTextInCards isReversed={index % 2 === 0 ? "" : "reversed"}>
                         <Subtitle>
                             {item.title}
