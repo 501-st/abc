@@ -21,14 +21,14 @@ const Container = styled.div`
 
 const Ellipse = styled.img`
   position: absolute;
-  left: 110px;
-  bottom: -2930px;
+  left: -200px;
+  top: 150px;
 `;
 
 const Dash = styled.img`
   position: absolute;
-  left: 0;
-  bottom: -3940px;
+  left: -320px;
+  bottom: -510px;
 `;
 
 const ReturnImages = () => {
@@ -40,18 +40,23 @@ const ReturnImages = () => {
     )
 }
 
+const Content = styled.div`
+  margin: 0 320px; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 85px 0 123px 0;
+  position: relative;
+`;
 
 const Video = ({user}) => {
     return (
         <>
-            {user !== "teacher" ? <ReturnImages/> : ""}
+
             <Container isTeacher={user === "teacher"}>
-                <div style={{
-                    margin: "0 320px", textAlign: "center", display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    padding: "85px 0 123px 0"
-                }}>
+                <Content>
+                    {user !== "teacher" ? <ReturnImages/> : ""}
                     <Subtitle style={{width: "1113px"}}>
                         English Patient - творческое пространство для каждого преподавателя и индивидуальная траектория
                         познания для каждого студента.
@@ -60,7 +65,7 @@ const Video = ({user}) => {
                             src="https://www.youtube.com/embed/xZIh2so3-AU"
                             title="YouTube video player"
                             frameBorder="0"/>
-                </div>
+                </Content>
             </Container>
         </>
     )
