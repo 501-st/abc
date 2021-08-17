@@ -22,13 +22,13 @@ const Container = styled.div`
 const Ellipse = styled.img`
   position: absolute;
   left: 110px;
-  bottom: -3030px;
+  bottom: -2930px;
 `;
 
 const Dash = styled.img`
   position: absolute;
   left: 0;
-  bottom: -4040px;
+  bottom: -3940px;
 `;
 
 const ReturnImages = () => {
